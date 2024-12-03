@@ -1,0 +1,227 @@
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Estilos para el botón que abre el modal */
+
+.ptitulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.perfil-caja p {
+
+    text-align: justify; /* Justifica el texto */
+    margin-left: 0; /* Alinea a la izquierda */
+    margin-right: 0; /* Asegura que no haya margen derecho */
+
+}
+
+#openModal {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    left: auto; /* Cambiar de 50px a auto para evitar ocupar todo el ancho */
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto; /* Cambiar de 100% a auto */
+    font-size: 16px;
+}
+
+#updateModalBtn {
+    position: fixed;
+    bottom: 20px;
+    margin-left: 2px;
+    left: 305px; /* Cambiar de 50px a auto para evitar ocupar todo el ancho */
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+    font-size: 16px;
+}
+
+
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+#closeUpdateModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+}       
+/* Contenedor principal */
+.container {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 20px auto 0; /* Centrado y espacio superior */
+    background: #fec9c9; /* Color de fondo del contenedor principal */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Título principal */
+h2  {
+    text-align: center;
+    font-size: 24px; /* Tamaño de letra del título */
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+h3 {
+    margin-top: 10px; /* Aumenta el espacio superior de los títulos de las secciones */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+/* Información general o divs del formulario */
+.info, form div {
+    margin: 10px 0; /* Espaciado vertical entre elementos */
+}
+
+/* Texto general */
+p {
+    margin: 10px; /* Espaciado dentro del párrafo */
+    font-size: 16px; /* Tamaño de letra */
+    color: #555; /* Color del texto */
+}
+
+/* Etiquetas de los inputs */
+label {
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Inputs de formulario */
+input {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-top: 5px; /* Espaciado superior */
+    border: 1px solid #ddd; /* Borde claro */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Botones */
+button {
+    background-color: #6ece71; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor tipo mano */
+    width: 100%; /* Ancho completo */
+    font-size: 16px; /* Tamaño del texto del botón */
+    margin-top: 15px; /* Espaciado superior */
+    
+}
+
+
+/* Efecto hover para botones */
+button:hover {
+    background-color: #45a049; /* Color más oscuro al pasar el cursor */
+}
+
+/* Enlace para volver atrás */
+.back-link {
+    display: inline-block;
+    margin-top: 10px; /* Espaciado superior */
+    text-decoration: none; /* Sin subrayado */
+    color: #007BFF; /* Color azul */
+}
+
+.back-link:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/* Ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* Contenedor para cada materia */
+.perfil-caja {
+    background: #ffe4e4; /* Fondo más claro que el contenedor principal */
+    border: 2px solid #ffc1c1; /* Borde con color más tenue */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado entre cuadros de materias */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    
+}
+
+/* Título de cada materia */
+.perfil-caja h2, p, h3 {
+    color: black;
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Estilo de cada asignación dentro de una materia */
+.asignacion {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Quitar la línea divisoria del último elemento */
+.asignacion:last-child {
+    border-bottom: none;
+}
+
+.descrip{
+    display: flex;
+    justify-content: space-between; /* Asignación y Nota en extremos opuestos */
+}
+.container p {
+
+    text-align: justify; /* Justifica el texto */
+   text-align: center;
+}

@@ -1,0 +1,161 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #fec9c9;
+  }
+  
+  .header {
+    width: 100%;
+    height: 15vh;
+    background-color: #fec9c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #materia {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .subtitu {
+    width: 100%;
+    height: 10vh;
+    background-color: #fec9c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #seccion-1 {
+    width: 450px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .notas {
+    width: 100%;
+    background-color: #fec9c9;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se acomoden en columna */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .arriba {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que los campos se acomoden si hay más de lo esperado */
+  }
+  
+  .abajo {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #fec9c9;
+  }
+  
+  .izq, .der {
+    width: 50%; /* Ajuste para que ocupe menos del 50% y no haya solapamiento */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+
+  
+  
+  .input {
+    width: 100%;
+   
+  }
+  
+  .input input {
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 4px;
+    margin: 8px;
+  }
+  
+  .boton {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    
+  }
+  
+  #add-note, #delete-note {
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 16px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #add-section, #delete-section {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ 
+  
+  
+  #delete-note, #delete-section {
+    background-color: red;
+  }
+  
+  #add-note:hover, #delete-note:hover {
+    opacity: 0.8;
+  }
+  
+  .nueva {
+    width: 100%;
+    height: 10vh;
+    background-color: #fec9c9;
+  }
+  
+  .result{
+    width: 100%;
+    height: 10vh;
+    background-color: #fec9c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #env{
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(238, 247, 238);
+    color: rgb(29, 25, 25);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  h2{
+    font-family: Arial, sans-serif;
+  }

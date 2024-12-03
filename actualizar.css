@@ -1,0 +1,97 @@
+/* Diseño general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFE4E1;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del formulario */
+form {
+    background-color: #fcb6b6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Select y campos de entrada */
+select,
+input[type="text"],
+input[type="email"],
+input[type="date"],
+button {
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Estilo para selects */
+select {
+    background-color: #f9f9f9;
+}
+
+/* Botón de actualización */
+button {
+    background-color: #16273a;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Efecto al enfocar los campos */
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="date"]:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Ajustes para móvil */
+@media (max-width: 600px) {
+    form {
+        padding: 15px 20px;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    select,
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    button {
+        font-size: 0.9rem;
+    }
+}
